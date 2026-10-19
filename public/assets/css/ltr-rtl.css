@@ -1,0 +1,73 @@
+
+/* Sidebar on the left for LTR layout */
+ [dir="ltr"] .side-bar {
+    left: 0;
+    right: auto;
+}
+
+/* Sidebar on the right for RTL layout */
+ [dir="rtl"] .side-bar {
+    right: 0;
+    left: auto;
+}
+/* LTR layout: sidebar is on the left */
+  [dir="ltr"] .section-container {
+    padding-left: 210px;
+    padding-right: 0;
+}
+[dir="ltr"] .section-container.active {
+    padding-left: 80px;
+}
+
+/* RTL layout: sidebar is on the right */
+  [dir="rtl"] .section-container {
+    padding-right: 210px;
+
+}
+
+  [dir="rtl"] .section-container.active {
+    padding-left: 0px;
+    padding-right: 80px;
+}
+/*
+[dir="ltr"] .section-container {
+    margin-left: 210px;
+} */
+/* [dir="ltr"] .section-container {
+    padding-left: 210px;
+}
+
+[dir="rtl"] .section-container {
+    padding-right: 210px;
+} */
+/*
+[dir="ltr"] .side-bar.collapsed + .section-container {
+    padding-left: 60px;
+} */
+
+/* [dir="rtl"] .side-bar.collapsed + .section-container {
+    padding-right: 60px;
+} */
+
+ [dir="ltr"] .side-bar.collapsed ~ .section-container {
+    margin-left: 60px;
+}
+[dir="rtl"] .side-bar.collapsed ~ .section-container {
+    margin-right: 60px;
+}
+/* RTL arrow (flipped) */
+html[dir="rtl"] .side-bar-manu .dropdown::before {
+    content: "\f104"; /* fa-angle-left */
+    right: auto;
+    left: 10px;
+}
+
+html[dir="rtl"] .side-bar-manu li:hover::before,
+html[dir="rtl"] .side-bar-manu li.active::before {
+    transform: rotate(-90deg);
+}
+
+/* .rtl-icon svg {
+    transform: scaleX(-1);
+} */
+

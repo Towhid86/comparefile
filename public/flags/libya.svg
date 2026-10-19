@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+<defs>
+</defs>
+<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+	<path d="M 6.035 22.5 C 2.204 29.12 0 36.801 0 45 s 2.204 15.88 6.035 22.5 h 77.93 C 87.796 60.88 90 53.199 90 45 s -2.204 -15.88 -6.035 -22.5 H 6.035 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 6.035 22.5 h 77.93 C 76.183 9.053 61.653 0 45 0 S 13.817 9.053 6.035 22.5 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(231,0,19); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 36.92 52.956 c -4.394 -3.136 -5.414 -9.239 -2.279 -13.633 c 3.136 -4.394 9.239 -5.414 13.633 -2.279 c -4.393 -4.392 -11.515 -4.392 -15.908 0 c -4.394 4.393 -4.395 11.516 -0.002 15.91 c 4.393 4.394 11.516 4.395 15.91 0.002 C 44.878 55.38 40.317 55.38 36.92 52.956 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<polygon points="55.15,41.96 51.57,37.04 51.57,43.12 45.79,45 51.57,46.88 51.57,52.96 55.15,48.04 60.93,49.91 57.35,45 60.93,40.09 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(243,244,245); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+	<path d="M 6.035 67.5 C 13.817 80.947 28.347 90 45 90 s 31.183 -9.053 38.965 -22.5 H 6.035 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(35,158,70); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+</g>
+</svg>

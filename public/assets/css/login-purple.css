@@ -1,0 +1,179 @@
+/**
+** baari-soft-login-section css start
+**version: 1.0
+ */
+:root {
+    --primary-purple: #9d4edd;
+    --primary-dark: #5a189a;
+    --primary-accent: #be95ff;
+    --bg-gradient-start: #240046;
+    --bg-gradient-end: #3c096c;
+    --input-bg: rgba(255, 255, 255, 0.05);
+    --input-border: rgba(255, 255, 255, 0.2);
+    --text-light: #ffffff;
+    --text-muted: #cccccc;
+}
+
+/* Background */
+.baari-soft-login-section {
+    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+}
+
+/* Card Container */
+.baari-login-card {
+    max-width: 480px;
+    width: 100%;
+}
+
+/* Glass Effect */
+.baari-glass-card {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    backdrop-filter: blur(14px);
+    border-radius: 1rem;
+}
+
+/* Avatar */
+.baari-avatar {
+    width: 80px;
+    height: 80px;
+}
+
+/* Input Fields */
+.baari-input {
+    background: var(--input-bg);
+    border: 1px solid var(--input-border);
+    color: var(--text-light);
+    padding-left: 2.5rem;
+}
+.baari-input::placeholder {
+    color: var(--text-muted);
+}
+.baari-input:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-accent);
+    box-shadow: 0 0 0 0.25rem rgba(190, 149, 255, 0.25);
+}
+
+/* Icons */
+.input-icon,
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input-icon {
+    left: 1rem;
+}
+.toggle-password {
+    right: 1rem;
+    cursor: pointer;
+}
+.input-icon img,
+.toggle-password img {
+    width: 20px;
+}
+
+/* Accent Text */
+.text-accent {
+    color: var(--primary-accent);
+}
+
+/* Buttons */
+/* .btn-accent {
+    background-color: #9D4EDD;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(157, 78, 221, 0.4);
+    transition: all 0.3s ease;
+}
+ 
+.btn-accent:hover {
+    background-color: #7B2CBF;
+    box-shadow: 0 6px 20px rgba(123, 44, 191, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-accent:active {
+    transform: scale(0.97);
+} */
+.btn-accent {
+    background: linear-gradient(135deg, #9D4EDD, #7B2CBF);
+    color: #fff;
+    border: none;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(157, 78, 221, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-accent::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 150%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: skewX(-20deg);
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.btn-accent:hover::before {
+    left: 100%;
+}
+
+.btn-accent:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(125, 55, 202, 0.6);
+}
+
+
+/* Role Buttons */
+.baari-role-btn {
+    color: #fff;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    min-width: 120px;
+    transition: 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+.baari-role-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Gradient Themes */
+.bg-gradient-teal {
+    background: linear-gradient(45deg, #00c9a7, #007bff);
+}
+.bg-gradient-orange {
+    background: linear-gradient(45deg, #f39c12, #e67e22);
+}
+.bg-gradient-brown {
+    background: linear-gradient(45deg, #a16207, #713f12);
+}
+
+/* Animation */
+.animate-fade-in {
+    animation: fadeInUp 0.8s ease-out both;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+

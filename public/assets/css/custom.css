@@ -1,0 +1,369 @@
+.baari-soft-login-section .forget-password input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border-radius: 6px;
+    border: 1px solid #D0D5DD !important;
+    background: #F87C15 !important;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+
+.baari-soft-login-section .forget-password input[type="checkbox"]:checked + .custom-control-label::before {
+    color: #FFFFFF;
+}
+
+.baari-soft-login-section .forget-password input[type="checkbox"]:checked {
+    accent-color: #3291d4 !important;
+}
+
+.indicate-text {
+    font-size: 12px;
+    color: red;
+}
+
+.form-control.error {
+    border-color: red;
+    padding: .375rem .75rem;
+}
+.image-wrapper.error {
+    border-color: red;
+    padding: .375rem .75rem;
+}
+.error-alert{
+    font-size: 11px;
+    color: red;
+}
+
+.error {
+    color: red !important;
+}
+
+.budget-form .form-control[readonly] {
+    background-color: #fff !important;
+}
+.budget-form ::placeholder{
+    font-size: 12px;
+}
+
+.avatar {
+    background: #F87C15;
+    border-radius: 50%;
+    color: #e3eaef;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+    line-height: 1.28;
+    height: 45px;
+    width: 45px;
+}
+
+.avatar.avatar-sm {
+    font-size: 12px;
+    height: 30px;
+    width: 30px;
+}
+
+.avatar img {
+    border-radius: 50%;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.btn-custom-warning {
+    background-color: #F87C15 !important;
+    color: #fff;
+    border: none !important;
+}
+.btn-custom-warning:hover {
+    color: #fff !important;
+}
+
+.custom-warning-color {
+    color: #F87C15;
+}
+
+.roles & permissions table td {
+    color: black;
+}
+
+.img-preview {
+    margin-top: 4px;
+    height: auto;
+    width: 100px;
+}
+.side-bar-logo img{
+    height: auto;
+     max-height: 60px;
+     text-align: center;
+     width: 100%;
+}
+
+.folders-files tr a {
+    font-size: 18px !important;
+}
+
+.gradient-row {
+    background: linear-gradient(270deg, #dbe4df 0%, #65e4a6 50%, #FFFFFF 100%);
+}
+
+@media print {
+    .table-two thead td{
+        padding: 0px !important;
+    }
+}
+
+.order-form-section label{
+    left: 10px;
+    white-space: nowrap;
+}
+
+.table-form-section .responsive-table{
+    min-height: unset !important;
+}
+.table-title-three h5{
+    font-weight: 600 !important;
+}
+.loss-profit-custom-color1{
+    background-color: rgba(255, 132, 0, 0.15);
+}
+.loss-profit-custom-color2{
+    background-color: rgba(255, 181, 101, 1);
+    font-weight: bold;
+}
+.production-wrap{
+    padding-right: 60px;
+}
+.form-control.reset-img{
+    display: none;
+}
+.print-wrapper .responsive-table{
+    min-height: unset;
+}
+
+.print-wrapper .table th, .print-wrapper .table td {
+    white-space: nowrap;
+}
+
+.print-wrapper{
+    min-height: 700px !important;
+}
+
+.table-header h3,
+.table-header h4{
+    font-weight:700;
+}
+
+.erp-new-invice .invice-detaisl{
+    padding: 20px 0;
+}
+
+.commercial-invoice {
+    margin-bottom: 30px;
+}
+
+.invoice-payment-details{
+    margin-top: 40px;
+}
+
+.erp-new-invice{
+    min-height: 900px !important;
+}
+
+/* dropdown font size reduce */
+.form-select {
+    font-size: 1rem;
+}
+
+.product-img{
+    height: 100px;
+    width: 250px;
+    border-radius: 2%;
+    overflow: hidden;
+    border: 2px dashed #E4E5E7;
+}
+
+.form-control .form-control {
+    border: 0 !important;
+}
+
+.table-user-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: var(--clr-gray4);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.table-user-icon img {
+    height: 25px;
+}
+.ctg-icon img{
+    max-height: 40px;
+    width: auto;
+    margin: 0 auto;
+}
+
+ /*delete modal*/
+.delete-modal {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.delete-modal h5 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.delete-modal p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.multiple-button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.chart-css {
+    width: 100% !important;
+    max-height: 340px !important;
+    min-height: 290px;
+}
+
+.rounded-image .table-img {
+    width: 40px;
+    height: 40px;
+}
+
+.width-10 {
+    width: 10px;
+}
+
+.add-feature-btn {
+    min-height: 30px;
+    padding: 4px 20px;
+    background: #F87C15 !important;
+    border: none !important;
+    color: #ffffff !important;
+    border-radius: 5px;
+}
+.add-input-btn{
+    background-color: transparent;
+    border: none;
+}
+.remove-list {
+    position: relative;
+}
+.remove-list .remove-one, .academic-list .remove-one {
+    background: transparent !important;
+    /* background: linear-gradient(90deg, #F87C15 0%, #F87C15 100%) !important; */
+    color: #fff !important;
+    /* width: 50px; */
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.remove-list .remove-one i, .academic-list .remove-one i{
+    color: #FF3030;
+}
+.feature-add-wrp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.feature-add-wrp .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button-container {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 45px ;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.top-btn-custom {
+    text-decoration: none;
+    border: none;
+}
+
+.top-btn-custom:hover,
+.top-btn-custom:active {
+    color: #007bff;
+    text-decoration: underline;
+    /*font-weight: bold;*/
+    border: none;
+    text-underline-offset: 18px;
+
+}
+
+.top-btn-custom.active {
+    text-decoration: underline;
+    color: #007bff;
+    font-weight: bold;
+    border: none;
+    text-underline-offset: 18px;
+}
+.add-academic-btn, .remove-academic-btn, .add-score-btn, .remove-score-btn{
+    margin-top: 1.5rem;
+}
+
+  /* Custom CSS for table row animation */
+  .table-hover-animate tbody tr {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transform and shadow transition */
+}
+
+
+.table-hover-animate tbody tr:hover {
+    transform: translateY(-5px); /* Move slightly up */
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    background-color: #fdeada; /* Optional: Slight background color change */
+}
+/* Move slightly up */
+/* .table-hover-animate tbody tr:hover {
+    transform: translateY(-5px);
+} */
+
+.table-hover-animate tbody tr:active {
+    transform: translateY(5px); /* Move slightly down on click */
+}
+
+.table-hover-animate tbody tr:active {
+    transform: translateY(5px); /* Move the row downwards when clicked */
+    box-shadow: none; /* Remove shadow on click */
+}
+/* Custom CSS for hover animation */
+.hover-animate {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for transform and color */
+}
+
+.hover-animate:hover {
+    transform: translateY(-2px); /* Move text slightly up */
+    color: #0d6efd; /* Bootstrap's primary blue color for text */
+}

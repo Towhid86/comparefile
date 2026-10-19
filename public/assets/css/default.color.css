@@ -1,0 +1,595 @@
+:root {
+    /* 🌊 Primary Ocean Blue Theme */
+    --clr-primary: #0D6EFD;          /* Core ocean blue */
+    --clr-primary-dark: #0B5ED7;     /* Darker shade for hover/active */
+    --clr-primary-light: #3d8bfd;    /* Accent / lighter shade */
+    --clr-primary-soft: #e7f1ff;     /* Very soft tint for backgrounds */
+
+    /* 🌌 Backgrounds */
+    --bg-gradient-start: #0077b6;    /* Gradient start */
+    --bg-gradient-end: #00b4d8;      /* Gradient end */
+    --bg-surface: #e0f7ff;           /* Card/Panel surface */
+    --bg-overlay: rgba(0, 0, 0, 0.6); /* Modal/overlay dim */
+
+    /* 🖊️ Inputs & Forms */
+    --input-bg: rgba(255, 255, 255, 0.05);
+    --input-border: rgba(13, 110, 253, 0.3);
+    --input-focus: #0D6EFD;          /* Primary border on focus */
+    --input-shadow: rgba(13, 110, 253, 0.3);
+
+    /* ✍ Text Colors */
+    --text-light: #ffffff;
+    --text-muted: #cfd8e3;
+    --text-dark: #1a1a1a;
+    --text-gray: #6c757d;
+
+    /* 🌈 Secondary & Accent Colors */
+    --clr-green: #20c997;            /* Success */
+    --clr-green-dark: #198754;
+    --clr-green-light: rgba(32, 201, 151, 0.15);
+
+    --clr-orange: #fd7e14;           /* Warning / accent */
+    --clr-orange-dark: #e85a2a;
+    --clr-orange-light: rgba(253, 126, 20, 0.15);
+
+    --clr-red: #dc3545;              /* Error / danger */
+    --clr-red-dark: #b02a37;
+    --clr-red-light: rgba(220, 53, 69, 0.15);
+
+    --clr-purple: #6f42c1;           /* Accent purple */
+    --clr-purple-dark: #59359c;
+    --clr-purple-light: rgba(111, 66, 193, 0.15);
+
+    /* ⚪ Neutrals */
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-gray1: #6c757d;
+    --clr-gray2: #adb5bd;
+    --clr-gray3: #dee2e6;
+    --clr-gray4: #f1f3f5;
+
+    /* ✍ Fonts */
+    --ff: "Inter", sans-serif;
+    --ff-alt: "Poppins", sans-serif;
+}
+
+
+/* ✅ Green utility (success tone) */
+.bg-green-one {
+    background: var(--clr-green) !important;
+    color: var(--clr-white) !important;
+}
+
+/* ✅ Global Body */
+body {
+    background: var(--clr-primary-soft); /* soft purple background tint */
+    color: var(--text-dark);             /* readable dark neutral */
+}
+
+/* ✅ Main Wrapper */
+#main-wrapper {
+    background: var(--clr-white);
+    border: 1px solid var(--clr-gray2);  /* subtle neutral border */
+    border-radius: 6px;
+}
+
+/* ✅ Buttons Reset */
+.btn,
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/* ✅ Cancel Button (Danger Outline) */
+.cancel-btn {
+    border: 1px solid var(--clr-red);
+    color: var(--clr-red) !important;
+    transition: all 0.3s ease;
+}
+.cancel-btn:hover {
+    background: var(--clr-red);
+    color: var(--clr-white) !important;
+}
+
+/* ✅ Text Utility Colors */
+.text-primary   { color: var(--clr-primary) !important; }
+.text-green     { color: var(--clr-green) !important; }
+.text-green-sm  { color: var(--clr-green-dark) !important; } /* consistent */
+.text-orange    { color: var(--clr-orange) !important; }
+.text-violet    { color: var(--clr-primary-light) !important; } /* soft accent */
+.text-red       { color: var(--clr-red) !important; }
+.text-blue      { color: var(--clr-blue) !important; } /* secondary info */
+
+/* ✅ SVG Icons */
+
+/* ✅ Modal */
+
+.form-control:focus {
+    border-color: var(--input-focus);
+    box-shadow: 0 0 0 0.2rem var(--input-shadow);
+}
+.text-primary, .modal-custom-design h1, svg {
+    color: var(--clr-primary);
+    fill: var(--clr-primary);
+}
+
+.modal-custom-design label {
+    color: var(--clr-gray1);   /* softer neutral for labels */
+}
+.modal-custom-design .form-control:focus {
+    border-color: var(--clr-primary);
+    box-shadow: 0 0 0 0.25rem var(--input-shadow) !important; /* purple glow */
+}
+
+/* ✅ Sidebar */
+.side-bar {
+    background: var(--clr-primary); /* Crimson primary (#DC143C) */
+    box-shadow: 0px 0px 6px rgba(13, 110, 253, 0.35); /* deep blue-teal toned shadow */
+
+}
+
+/* ✅ Sidebar Logo */
+.side-bar-logo {
+    padding: 10px;
+    border-bottom: 1px solid rgba(13, 110, 253, 0.25); /* subtle deep blue-teal divider */
+
+}
+
+
+
+/* Sidebar Close Button */
+.close-btn {
+    color: var(--clr-white);
+    transition: color 0.3s ease;
+}
+.close-btn:hover {
+    color: var(--clr-orange); /* golden/orange accent */
+}
+
+/* Reset Button (Danger Outline) */
+.multiple-button-group .reset-btn,
+.button-group .reset-btn {
+    border: 1px solid var(--clr-red) !important;
+    color: var(--clr-red) !important;
+    transition: all 0.3s ease;
+}
+.reset-btn:hover {
+    background: var(--clr-red) !important;
+    color: var(--clr-white) !important;
+}
+
+/* Multi Delete Button (Warning) */
+.multiple-button-group .multi-delete-btn {
+    background: var(--clr-orange) !important;
+    color: var(--clr-white) !important;
+    transition: background 0.3s ease;
+}
+/* Multi Delete Button Hover */
+.multi-delete-btn:hover {
+    background: var(--clr-primary-dark, #0a58ca) !important; /* darker Bootstrap Blue */
+    color: var(--clr-white) !important;                     /* keep text readable */
+    box-shadow: 0 4px 10px rgba(13, 110, 253, 0.35);           /* teal-toned glow */
+    transform: translateY(-2px);                             /* subtle lift effect */
+    transition: background 0.3s ease,
+                color 0.3s ease,
+                box-shadow 0.3s ease,
+                transform 0.2s ease;
+}
+
+
+
+/* Sidebar Dropdown Arrow */
+.side-bar-manu .dropdown::before {
+    color: var(--clr-gray2);
+    transition: color 0.3s ease;
+}
+.side-bar-manu .dropdown:hover::before {
+    color: var(--clr-orange); /* highlight on hover */
+}
+
+/* Active Dropdown Links */
+.side-bar-manu .dropdown.active > .dropdown-menu .dropdown.active > a,
+.side-bar-manu .dropdown.active > .dropdown-menu .dropdown.active .active,
+.side-bar-manu .dropdown.active .active {
+    /* background: var(--clr-primary-dark); */
+     background:  linear-gradient(
+        90deg,
+        var(--clr-primary-light) 0%,
+        var(--clr-primary) 100%
+    );
+    color: var(--clr-white) !important;
+    border-left: 4px solid var(--clr-orange);
+    transition: background 0.3s ease;
+}
+
+/* Hover State for Sidebar Menu Links */
+.side-bar-manu a:hover {
+    color: var(--clr-white) !important;
+    transition: all 0.3s ease;
+}
+
+/* Active Menu Item */
+.side-bar-manu li.active > a {
+    color: var(--clr-white) !important;
+    border-left: 4px solid var(--clr-orange);
+}
+
+/* ⚡ Responsive Hover State for Non-Active Menu Items */
+.side-bar-manu li:not(.active):hover > a {
+    background: linear-gradient(
+        90deg,
+        var(--clr-primary-light) 0%,
+        var(--clr-primary) 100%
+    );
+    color: var(--clr-white) !important;
+    box-shadow: inset 3px 0 0 var(--clr-primary-dark); /* deep coffee accent bar */
+    transform: translateX(2px); /* subtle movement for responsiveness */
+    transition: background 0.25s ease,
+                box-shadow 0.25s ease,
+                transform 0.2s ease;
+}
+
+/* ✅ Nested Dropdown Menu */
+.side-bar-manu li .dropdown-menu {
+    border-left: 1px solid rgba(13, 110, 253, 0.25); /* teal-toned divider */
+
+}
+
+
+
+/* Nested Dropdown Links */
+.side-bar-manu li .dropdown-menu li a {
+    color: var(--clr-white);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* 🌟 Parent Menu: Hover & Active */
+.side-bar-manu a:hover,
+.side-bar-manu li.active > a,
+.side-bar-manu li .dropdown-menu li a:hover {
+    background: linear-gradient(
+        90deg,
+        var(--clr-primary-light) 0%,
+        var(--clr-primary) 100%
+    );
+    color: var(--clr-white) !important;
+    box-shadow: inset 3px 0 0 var(--clr-primary-dark);
+    transition: all 0.25s ease-in-out;
+    transform: translateX(2px);
+}
+
+/* 🌟 First-Level Dropdown Links: Active */
+.side-bar-manu li .dropdown-menu li a.active {
+    background: linear-gradient(
+        90deg,
+        var(--clr-primary-light) 0%,
+        var(--clr-primary) 100%
+    );
+    color: var(--clr-white) !important;
+    box-shadow: inset 2px 0 0 var(--clr-primary-dark);
+}
+
+/* ⚡ Second-Level Dropdown Links: Hover & Active */
+.side-bar-manu li .dropdown-menu li li:hover > a,
+.side-bar-manu li .dropdown-menu li li.active > a {
+    background: linear-gradient(
+        90deg,
+        var(--clr-primary-light) 0%,
+        var(--clr-primary) 100%
+    );
+    color: var(--clr-white) !important;
+    box-shadow: inset 3px 0 0 var(--clr-primary-dark);
+    transition: all 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+    transform: translateX(2px);
+}
+
+
+
+
+/* Nav Pills */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: var(--clr-primary);
+    color: var(--clr-white) !important;
+    transition: background 0.3s ease;
+}
+
+.nav-link {
+    color: var(--clr-primary);
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--clr-primary-light);
+}
+
+/* Main Header Section */
+.main-header-section {
+    background: var(--clr-primary-soft); /* soft crimson accent */
+    box-shadow: 0 4px 20px rgba(13, 110, 253, 0.2); /* balanced crimson shadow */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Profile Dropdown Hover */
+.main-header-section .profile-info .dropdown-menu li a:hover {
+    color: var(--clr-primary); /* crimson text */
+    background: linear-gradient(
+        90deg,
+        rgba(13, 110, 253, 0.08) 0%,
+        rgba(13, 110, 253, 0.15) 100%
+    ); /* smooth crimson gradient hover */
+    transform: translateX(3px); /* subtle interactive movement */
+    transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+
+
+/* 🔍 Search Button */
+.search-btn {
+    background: var(--clr-primary) !important;
+    color: var(--clr-white) !important;
+    border: 1px solid var(--clr-primary);
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.search-btn:hover,
+.search-btn:focus {
+    background: var(--clr-primary-dark) !important;
+    border-color: var(--clr-primary-dark);
+    color: var(--clr-white) !important; /* ensure strong contrast */
+    transform: translateY(-2px); /* subtle lift for interactivity */
+    box-shadow: 0 6px 14px rgba(13, 110, 253, 0.3); /* deeper crimson glow */
+    transition: background 0.25s ease,
+                border-color 0.25s ease,
+                box-shadow 0.3s ease,
+                transform 0.2s ease;
+}
+
+
+/* 📊 Table Header Button Group */
+.table-header .button-group {
+    border-bottom: 1px solid var(--clr-primary);
+    display: inline-flex;
+    gap: 6px;
+    padding-bottom: 4px;
+}
+
+.table-header .button-group a {
+    background: none !important;
+    color: var(--clr-gray1) !important; /* neutral gray for inactive */
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* 🔘 Table Header Button Group */
+.table-header .button-group a {
+    background: transparent;
+    color: var(--clr-gray1);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background 0.25s ease, color 0.25s ease, box-shadow 0.3s ease;
+}
+
+
+.table-header .button-group a:hover {
+    color: var(--clr-primary);
+    background: rgba(13, 110, 253, 0.08); /* subtle crimson tint */
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* 🌟 Active State */
+.table-header .button-group a.active {
+    background: var(--clr-primary) !important;
+    color: var(--clr-white) !important;
+    box-shadow: 0 3px 8px rgba(13, 110, 253, 0.3); /* crimson glow */
+    transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+
+.table-header .button-group a:hover:not(.active) {
+    color: var(--clr-primary) !important;
+    background-color: var(--clr-primary-light); /* subtle primary tint */
+}
+
+/* Add Order Button */
+
+/* Pagination */
+.pagination .page-item.active .page-link {
+    color: var(--clr-white);
+    background: var(--clr-primary);
+}
+
+.pagination .page-link {
+    color: var(--clr-primary);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.pagination .page-link:hover:not(.active) {
+    color: var(--clr-primary);
+    background-color: var(--clr-primary-light);
+}
+
+.pagination .page-link.active {
+    color: var(--clr-white) !important;
+    background: var(--clr-primary) !important;
+}
+
+/* Role Reset Button */
+.role-reset-btn {
+    color: var(--clr-primary);
+    border: 1px solid var(--clr-primary);
+    transition: all 0.3s ease;
+}
+
+.role-reset-btn:hover {
+    color: var(--clr-white) !important;
+    background-color: var(--clr-primary);
+    border: 1px solid transparent;
+}
+
+/* Modal Category Button */
+/* Service Button */
+.service-btn-possition {
+    background: var(--clr-primary) !important;
+    color: var(--clr-white) !important;
+    transition: all 0.3s ease;
+}
+
+.service-btn-possition:hover {
+    background: var(--clr-primary-dark) !important;
+}
+
+/* DataTables Pagination */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    border: 1px solid var(--clr-gray3) !important; /* softer neutral border */
+    color: var(--clr-primary) !important;
+    transition: all 0.3s ease;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: var(--clr-primary-light);
+    color: var(--clr-primary) !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: var(--clr-primary) !important;
+    color: var(--clr-white) !important;
+    border-color: var(--clr-primary) !important;
+}
+
+/* Table Search */
+.table-search .form-control {
+    border: 1px solid var(--clr-gray3);
+    transition: all 0.3s ease;
+}
+
+/* 🔎 Table Search Input Focus */
+.table-search .form-control:focus {
+    border-color: var(--clr-primary);  /* crimson border */
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.35); /* crimson glow */
+    outline: none;
+    background-color: var(--clr-white); /* clean background */
+    color: var(--text-dark);            /* strong text contrast */
+    transition: border-color 0.25s ease,
+                box-shadow 0.25s ease,
+                background-color 0.25s ease,
+                color 0.25s ease;
+}
+
+
+
+
+.table-search button {
+    background: var(--clr-primary);
+    color: var(--clr-white);
+    transition: all 0.3s ease;
+}
+
+.table-search button:hover {
+    background: var(--clr-primary-dark);
+}
+
+/* Themed Buttons */
+
+.border-btn {
+    border: 1px solid var(--clr-primary);
+    background: none;
+    color: var(--clr-primary);
+    transition: all 0.3s ease;
+}
+
+.border-btn:hover {
+    background: var(--clr-primary);
+    color: var(--clr-white);
+}
+
+/* Custom Warning Button replaced with primary for consistency */
+.btn-custom-warning {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    transition: all 0.3s ease;
+}
+
+.btn-custom-warning:hover {
+    background-color: var(--clr-primary-dark);
+    color: var(--clr-white) !important;
+}
+
+/* Custom Text Color */
+.custom-warning-color {
+    color: var(--clr-primary);
+}
+.custom-danger-color {
+    color: var(--clr-red);
+}
+.custom-success-color {
+    color: var(--clr-green);
+}
+.custom-info-color {
+    color: var(--clr-blue);
+}
+.custom-dark-color {
+    color: var(--text-dark);
+}
+.custom-muted-color {
+    color: var(--text-muted);
+}
+.custom-gray-color {
+    color: var(--clr-gray1);
+}
+.custom-light-color {
+    color: var(--clr-white);
+}
+/* 🎯 Group 1: Primary Action Buttons (Save, Submit, Add Order) */
+.save-btn,
+.add-order-btn,
+.submit-btn {
+    background-color: var(--clr-primary);       /* crimson red */
+    border: 1px solid var(--clr-primary);
+    color: var(--clr-white) !important;
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 2px 6px rgba(13, 110, 253, 0.25); /* subtle crimson glow */
+}
+
+.save-btn:hover,
+.add-order-btn:hover,
+.submit-btn:hover {
+    background-color: var(--clr-primary-dark);  /* deeper crimson */
+    border-color: var(--clr-primary-dark);
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.4); /* stronger crimson glow */
+    transform: translateY(-1px);
+}
+
+/* 🎯 Group 2: Secondary / Accent Buttons (Theme, Modal, Close) */
+.theme-btn,
+.modal-btn-ctg,
+.close-btn {
+    background-color: var(--clr-primary-light); /* lighter crimson accent */
+    border: 1px solid var(--clr-primary-light);
+    color: var(--clr-white) !important;
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 2px 6px rgba(13, 110, 253, 0.2); /* soft crimson shadow */
+}
+
+.theme-btn:hover,
+.modal-btn-ctg:hover,
+.close-btn:hover {
+    background-color: var(--clr-primary);       /* full crimson */
+    border-color: var(--clr-primary);
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.35);
+    transform: translateY(-1px);
+}
