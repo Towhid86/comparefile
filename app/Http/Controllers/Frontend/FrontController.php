@@ -10,12 +10,12 @@ class FrontController extends Controller
         public function check()
         {
             $followers = json_decode(
-                file_get_contents(storage_path('app/followers.json')),
+                file_get_contents(storage_path('app/followers1.json')),
                 true
             );
 
             $following = json_decode(
-                file_get_contents(storage_path('app/following.json')),
+                file_get_contents(storage_path('app/following1.json')),
                 true
             );
 
